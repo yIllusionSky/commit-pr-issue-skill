@@ -10,7 +10,7 @@
 type: feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert
 scope: optional, use when the change is limited to a clear area
 description: A short summary of the change
-body: conditionally required when the description alone cannot explain the reason, context, impact, or risk of the change
+body: required by default. Explain the reason, context, impact, or risk of the change when the description alone is not fully sufficient. Omit only for trivial changes when the subject fully explains the change.
 footer: conditionally required for breaking changes, issue references, or migration notes
 
 ## Example

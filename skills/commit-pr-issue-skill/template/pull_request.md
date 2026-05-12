@@ -1,7 +1,15 @@
+## Example
+
+**Title**:
+```markdown
+docs(skill): 完善提交与 PR 模板规范
+```
+
+**Content**:
+```markdown
 ## Pull Request Checklist
 
-- [ ] I have read and followed the []() guidelines.
-- [ ] I have read and followed the []().
+- [ ] I have read and followed the project guidelines.
 - [ ] My contribution adds a new instruction, prompt, agent, skill, or workflow file in the correct directory.
 - [ ] The file follows the required naming convention.
 - [ ] The content is clearly structured and follows the example format.
@@ -41,3 +49,4 @@ Closes #
 <!-- Add any additional information or context for reviewers here. -->
 
 ---
+```

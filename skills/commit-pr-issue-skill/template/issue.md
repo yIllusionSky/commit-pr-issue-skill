@@ -4,54 +4,61 @@
 
 **User**: "Create a bug issue - the login page crashes when using SSO"
 
-**Action**: 
-```bash
-gh api repos/github/awesome-copilot/issues \
-  -X POST \
-  -f title="Login page crashes when using SSO" \
-  -f type="Bug" \
-  -f body="## Description
+**Title**:
+```markdown
+Login page crashes when using SSO
+```
+
+**Content**:
+```markdown
+## Description
+
 The login page crashes when users attempt to authenticate using SSO.
 
 ## Steps to Reproduce
+
 1. Navigate to login page
 2. Click 'Sign in with SSO'
 3. Page crashes
 
 ## Expected Behavior
+
 SSO authentication should complete and redirect to dashboard.
 
 ## Actual Behavior
-Page becomes unresponsive and displays error." \
-  --jq '{number, html_url}'
+
+Page becomes unresponsive and displays error.
 ```
 
 ### Example 2: Feature Request
 
 **User**: "Create a feature request for dark mode with high priority"
 
-**Action**:
-```bash
-gh api repos/github/awesome-copilot/issues \
-  -X POST \
-  -f title="Add dark mode support" \
-  -f type="Feature" \
-  -f labels[]="high-priority" \
-  -f body="## Summary
+**Title**:
+```markdown
+Add dark mode support
+```
+
+**Content**:
+```markdown
+## Summary
+
 Add dark mode theme option for improved user experience and accessibility.
 
 ## Motivation
+
 - Reduces eye strain in low-light environments
 - Increasingly expected by users
 
 ## Proposed Solution
+
 Implement theme toggle with system preference detection.
 
 ## Acceptance Criteria
+
 - [ ] Toggle switch in settings
 - [ ] Persists user preference
-- [ ] Respects system preference by default" \
-  --jq '{number, html_url}'
+- [ ] Respects system preference by default
 ```
 
 ## Common Labels
